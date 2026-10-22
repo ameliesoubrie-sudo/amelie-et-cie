@@ -221,7 +221,7 @@
   Object.keys(RUBRIQUES).forEach(function(r){
     var R=RUBRIQUES[r], st=RUB_STYLE[r], sec=document.getElementById('v-'+r); if(!sec) return;
     var liste=ARTICLES.filter(function(a){return a.rub===r});
-    var h='<div class="rub-hero" style="--rub-bg:'+st[0]+';--rub-acc:'+st[1]+';--rub-txt:'+st[2]+'"><span class="rub-rond r1" aria-hidden="true"></span><span class="rub-rond r2" aria-hidden="true"></span><div class="wrap rub-hero-in"><div><nav class="ariane" aria-label="Fil d\'Ariane"><ol><li><a href="/">Le journal</a></li><li>'+R.titre+'</li></ol></nav><p class="label">La rubrique</p><h1 class="t">'+R.titre+'</h1><p class="chapo">'+R.intro+'</p></div>'+(liste.length?'<div class="rub-compteur"><span class="rub-big">'+deux(liste.length)+'</span><span class="label">article'+(liste.length>1?'s':'')+' testé'+(liste.length>1?'s':'')+'<br>et raconté'+(liste.length>1?'s':'')+'</span></div>':'')+'</div></div><div class="wrap rub-corps">';
+    var h='<div class="wrap"><header class="rub-tete2"><span class="scotch" aria-hidden="true"></span><p class="rub-label">la rubrique</p><h1 class="t">'+R.titre+'</h1><p class="rub-intro">'+R.intro+'</p></header></div><div class="wrap rub-corps">';
     if(!liste.length){
       h+='<div class="rub-vide"><p class="rub-tampon">Bientôt</p><h2 class="t">Je teste, <span class="hl">je reviens vite.</span></h2><p>Les premiers articles de cette rubrique arrivent très bientôt. En attendant, on se retrouve sur Instagram.</p><a class="btn" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">Me suivre <svg class="arrow" aria-hidden="true"><use href="#fl"/></svg></a></div>';
     } else {
