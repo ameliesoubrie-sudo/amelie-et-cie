@@ -1011,5 +1011,16 @@ figcaption{font-size:19px!important}
 .bon-carte,.bon-carte p{color:var(--espresso)!important}
 .bon-photo img{border:10px solid #fff;box-shadow:0 10px 24px rgba(74,59,55,.12);border-radius:0!important;transform:rotate(-1.5deg)}
 
+/* à propos : les deux photos en tirages plus petits */
+.vie-grille{grid-template-columns:repeat(2,minmax(0,300px))!important;justify-content:center;gap:56px!important;align-items:start!important}
+.vie figure{background:#fff;padding:10px 10px 46px;box-shadow:0 12px 28px rgba(74,59,55,.13)}
+.vie-1{transform:rotate(-2deg)}.vie-2{transform:rotate(2deg);margin-top:30px!important}
+.vie figure::before{content:"";position:absolute;z-index:2;top:-12px;left:50%;width:90px;height:24px;transform:translateX(-50%) rotate(-3deg);background:var(--scotch)}
+.vie-2::before{background:var(--washi-pois)!important}
+.vie img{border-radius:0!important;display:block}
+.vie figcaption{position:absolute;left:0;right:0;bottom:12px;background:none!important;text-align:center;padding:0!important}
+.vie .credit{bottom:56px}
+@media (max-width:640px){.vie-grille{grid-template-columns:minmax(0,280px)!important;gap:40px!important}.vie-2{margin-top:0!important}}
+
 .vue{display:block!important}
 .proto{display:none!important}
