@@ -1042,6 +1042,17 @@ figcaption{font-size:19px!important}
 .menu a.menu-contact::before{content:"";position:absolute;top:-8px;left:50%;width:46px;height:16px;transform:translateX(-50%) rotate(4deg);background:var(--scotch)}
 .menu a.menu-contact::after{display:none!important}
 .menu a.menu-contact:hover{transform:rotate(0)}
+.la-titre{font-family:var(--main);font-weight:500;font-size:30px;color:var(--terracotta);margin:0 0 18px}
+.la-grille{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 22px}
+.la-carte{display:block;text-decoration:none;color:var(--espresso);transform:rotate(var(--r));transition:transform .3s}
+.la-carte:hover{transform:rotate(0) translateY(-6px)}
+.la-carte figure{position:relative;margin:0;background:#fff;padding:8px 8px 10px;box-shadow:0 10px 24px rgba(74,59,55,.13)}
+.la-carte .scotch{top:-11px;width:70px;height:22px}
+.la-carte:nth-child(2) .scotch{background:var(--washi-pois)}.la-carte:nth-child(3) .scotch{background:var(--washi-raye)}
+.la-carte img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.la-carte .cc-rub{display:block;font-family:var(--main);font-size:19px;color:var(--terracotta);margin:12px 0 0}
+.la-carte h3{font-size:19px!important;line-height:1.25;margin:2px 0 0}
+@media (max-width:900px){.la-grille{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .vue{display:block!important}
 .proto{display:none!important}
