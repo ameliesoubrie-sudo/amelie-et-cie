@@ -1038,6 +1038,10 @@ figcaption{font-size:19px!important}
 .contact-form .btn{justify-self:start}
 .contact-merci{text-align:center;padding:20px 0 6px}
 @media (max-width:600px){.cf-ligne{grid-template-columns:1fr}}
+.menu a.menu-contact{position:relative;background:#fff;padding:9px 18px!important;box-shadow:0 6px 16px rgba(74,59,55,.12);transform:rotate(-2deg);margin-left:6px}
+.menu a.menu-contact::before{content:"";position:absolute;top:-8px;left:50%;width:46px;height:16px;transform:translateX(-50%) rotate(4deg);background:var(--scotch)}
+.menu a.menu-contact::after{display:none!important}
+.menu a.menu-contact:hover{transform:rotate(0)}
 
 .vue{display:block!important}
 .proto{display:none!important}
