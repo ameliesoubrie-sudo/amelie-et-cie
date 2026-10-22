@@ -256,7 +256,7 @@
     'https://www.instagram.com/reel/DbkuXDYMSG8/'
   ];
   (function(){
-    var g=document.getElementById('insta-grille'); if(!g) return;
+    var g=document.getElementById('insta-grille'); if(!g) return; /* remplacé par la pellicule */
     function vides(){
       var n=POSTS_INSTA.length, total=(n===4)?4:Math.max(3,Math.ceil(n/3)*3);
       for(var i=n;i<total;i++){g.insertAdjacentHTML('beforeend','<a class="insta-vide" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener"><span class="label">Post '+(i+1)+'</span><span>Ton post Instagram s’affichera ici</span></a>');}

@@ -80,27 +80,14 @@
     <div class="carnet-plus"><a class="btn" href="/tout-le-carnet/">Voir tout le carnet</a></div>
   </div>
 
-  <section class="insta" aria-labelledby="insta-titre">
+  <section class="insta-film" aria-labelledby="insta-titre">
     <div class="wrap">
-      <div class="rubrique-head">
-        <h2 class="label" id="insta-titre" style="margin:0">Sur mon Instagram</h2>
-        <hr>
-        <a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">@ameliesoubrie <svg class="arrow" aria-hidden="true"><use href="#fl"/></svg></a>
-      </div>
-      <div class="insta-grille" id="insta-grille"></div>
+      <div class="titre-film"><h2 class="t" id="insta-titre">Ma planche <span class="hl">contact.</span></h2><span class="main-ecrite">mes photos Instagram, comme sur une pellicule</span></div>
     </div>
+    <div class="film"><div class="film-in"><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/ad4f39b172ee.jpg" alt="" loading="lazy"><span>01</span></a><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/d0b067ae9b7a.jpg" alt="" loading="lazy"><span>02</span></a><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/3acec63bede3.jpg" alt="" loading="lazy"><span>03</span></a><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/2f9e57475da7.jpg" alt="" loading="lazy"><span>04</span></a><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/5ca2c9cb4e45.jpg" alt="" loading="lazy"><span>05</span></a><a href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener" aria-label="Voir mon Instagram"><img src="/img/8778d7c2db8a.jpg" alt="" loading="lazy"><span>06</span></a></div></div>
+    <div class="wrap film-actions"><a class="btn" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">Me suivre @ameliesoubrie</a></div>
   </section>
 
-  <div class="suite">
-    <div class="wrap">
-      <h2 class="t">Et la <span class="hl">suite ?</span></h2>
-      <span class="sep" aria-hidden="true"></span>
-      <div>
-        <p>On continue sur Instagram.</p>
-        <a class="btn" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">Me suivre <svg class="arrow" aria-hidden="true"><use href="#fl"/></svg></a>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -184,7 +171,7 @@
     'https://www.instagram.com/reel/DbkuXDYMSG8/'
   ];
   (function(){
-    var g=document.getElementById('insta-grille'); if(!g) return;
+    var g=document.getElementById('insta-grille'); if(!g) return; /* remplacé par la pellicule */
     function vides(){
       var n=POSTS_INSTA.length, total=(n===4)?4:Math.max(3,Math.ceil(n/3)*3);
       for(var i=n;i<total;i++){g.insertAdjacentHTML('beforeend','<a class="insta-vide" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener"><span class="label">Post '+(i+1)+'</span><span>Ton post Instagram s’affichera ici</span></a>');}
