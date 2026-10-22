@@ -1129,5 +1129,19 @@ figcaption{font-size:19px!important}
 .shake-note{font-size:14.5px;color:var(--espresso-doux);font-style:italic;margin:0!important}
 @media (max-width:760px){.shake-photos figcaption{font-size:16px}.shake{grid-template-columns:1fr;gap:28px}.shake-p2{transform:rotate(2.5deg) translateY(14px)!important}}
 
+/* Rubriques sur téléphone : tout tient dans le cadre */
+@media (max-width:700px){
+  .rub-une,.rub-carte{grid-template-columns:minmax(0,1fr)!important;max-width:100%;overflow:hidden}
+  .rub-une>*,.rub-carte>*{min-width:0;max-width:100%}
+  .rub-une-img{margin:12px 12px 0!important;transform:rotate(-1deg)!important}
+  .rub-une .rub-tampon{width:82px!important;height:82px!important;font-size:14px!important;right:8px!important;bottom:-22px!important;top:auto!important}
+  .rub-une-txt{padding:30px 18px 26px!important}
+  .rub-une-txt h2{font-size:26px!important;margin:6px 0 10px!important}
+  .rub-une-txt p,.rub-carte-txt p{font-size:15px!important;line-height:1.55;overflow-wrap:break-word}
+  .rub-une-txt .label{font-size:11px!important}
+  .rub-une .btn{width:auto!important;max-width:100%;padding:11px 18px!important;font-size:12px!important;gap:10px;margin:6px 0 4px 4px}
+  .rub-carte-txt h2{font-size:22px!important}
+}
+
 .vue{display:block!important}
 .proto{display:none!important}
