@@ -268,11 +268,10 @@
       var sec=box.closest('section.vue'); if(!sec) return;
       var cur=sec.id.replace(/^v-/,''), me=ARTICLES.filter(function(x){return x.slug===cur})[0];
       var autres=ARTICLES.filter(function(x){return x.slug!==cur});
-      if(me){var meme=autres.filter(function(x){return x.rub===me.rub}),diff=autres.filter(function(x){return x.rub!==me.rub});autres=meme.slice(0,2).concat(diff,meme.slice(2));}
       var cartes=autres.slice(0,4).map(function(a,i){var R=RUBRIQUES[a.rub];
         return '<a class="la-carte" href="/'+a.slug+'/\" style="--r:'+[-1.6,1.2,-.8,1.6][i]+'deg"><figure><span class="scotch" aria-hidden="true"></span><img src="'+photo(a)+'" alt="" loading="lazy"></figure><span class="cc-rub">'+(R?R.nom.toLowerCase():'')+'</span><h3 class="t">'+a.titre+'</h3></a>';
       }).join('');
-      box.innerHTML='<h2 class="la-titre">À lire aussi</h2><div class="la-grille">'+cartes+'</div>';
+      box.innerHTML='<h2 class="la-titre">Les derniers articles</h2><div class="la-grille">'+cartes+'</div>';
     });
   })();
   var vues=[document.body.getAttribute('data-page')];
