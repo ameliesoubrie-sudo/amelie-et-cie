@@ -1110,5 +1110,24 @@ figcaption{font-size:19px!important}
 .ch-actions .btn.btn-scrap{align-self:flex-start}
 .carnet-plus .btn.btn-scrap,.film-actions .btn.btn-scrap{margin-inline:auto;display:flex}
 
+/* Whey : comment je la prends */
+.shake{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:44px;align-items:center;margin:28px 0 10px}
+.shake-photos{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:14px 6px}
+.shake-photos .pola{padding:10px 10px 36px}
+.shake-photos .pola img{width:100%;height:auto;display:block}
+.shake-photos figcaption{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--main);font-size:20px;color:var(--espresso-doux)}
+.shake-p1{transform:rotate(-3deg)!important}
+.shake-p2{transform:rotate(2.5deg) translateY(22px)!important}
+.shake-etapes{list-style:none;counter-reset:e;margin:0;padding:0}
+.shake-etapes li{counter-increment:e;position:relative;padding:12px 0 12px 54px;border-bottom:1px dashed var(--caramel);font-size:17px}
+.shake-etapes li::before{content:counter(e);position:absolute;left:0;top:50%;transform:translateY(-50%) rotate(-6deg);width:38px;height:38px;display:grid;place-items:center;background:var(--miel);font-family:var(--main);font-size:24px;color:var(--espresso);box-shadow:0 2px 5px rgba(74,59,55,.15)}
+.shake-astuce{font-family:var(--main);font-size:30px;color:var(--terracotta);margin:22px 0 6px;transform:rotate(-1.5deg)}
+.shake-moment{position:relative;background:var(--miel-clair);padding:26px 30px 22px;margin:40px 0 10px;border-radius:4px;box-shadow:0 8px 20px rgba(74,59,55,.08);transform:rotate(-.6deg)}
+.shake-moment::before{content:"";position:absolute;top:-10px;left:36px;width:84px;height:22px;background:var(--washi-raye);transform:rotate(-4deg)}
+.shake-moment .label{margin:0 0 8px}
+.shake-moment p{margin:0 0 10px}
+.shake-note{font-size:14.5px;color:var(--espresso-doux);font-style:italic;margin:0!important}
+@media (max-width:760px){.shake-photos figcaption{font-size:16px}.shake{grid-template-columns:1fr;gap:28px}.shake-p2{transform:rotate(2.5deg) translateY(14px)!important}}
+
 .vue{display:block!important}
 .proto{display:none!important}
