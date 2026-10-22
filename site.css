@@ -936,5 +936,36 @@ body[data-vue="accueil"] .page-carnet{background:#FFFFFF!important}
 @media (max-width:900px){.carnet-grille{grid-template-columns:1fr 1fr;gap:44px 24px}.cc:nth-child(3n+2){margin-top:0}}
 @media (max-width:560px){.carnet-grille{grid-template-columns:1fr}}
 
+/* ===== tailles affinées (moins gros, plus élégant) ===== */
+body{font-size:16px!important}
+.contenu>p,.texte-photo p,.prevenu p,.pb-avis p,.pb-tech p,.pb-tech li,.vraie-txt p,.ch-txt>p,.ch-vraie p,.contenu li,.hotel p,.bon-carte p,.recit-grille p{font-size:16.5px!important;line-height:1.7}
+.texte-photo{font-size:16.5px!important}
+.chapo,.art-hero .chapo{font-size:17.5px!important}
+.contenu>h2.t,.faq h2.t,.avis h2.t,.bientot h2.t{font-size:clamp(30px,3.4vw,46px)!important}
+.art-hero h1,.apropos-hero h1,.ch-hero h1{font-size:clamp(36px,4vw,54px)!important}
+.sous-titre,.contenu h3.t,.produit-bloc h3.t{font-size:clamp(24px,2.4vw,32px)!important}
+.prev-titre{font-size:clamp(24px,2.4vw,30px)!important}
+.pb-num{font-size:clamp(56px,6vw,88px)!important}
+.fiche dl div{font-size:15px!important}
+.faq h3{font-size:18.5px!important}
+.faq-grille p{font-size:15.5px!important}
+.avis .accroche{font-size:18px!important}
+.avis-grille p,.verdict{font-size:15.5px!important}
+figcaption{font-size:19px!important}
+.label{font-size:11.5px!important}
+.ch-ecart{font-size:27px!important}
+.ch-vraie .ch-main{font-size:clamp(34px,4vw,48px)!important}
+.passions-liste li{font-size:clamp(20px,2.4vw,32px)!important}
+.recit-grille .num{font-size:clamp(56px,6vw,96px)!important}
+.recit-grille h2.t{font-size:clamp(26px,2.8vw,36px)!important}
+.vraie h2{font-size:clamp(28px,3vw,40px)!important}
+.bon-mot{font-size:clamp(28px,3vw,40px)!important}
+.signature h3{font-size:26px!important}
+.lire-aussi h3{font-size:clamp(22px,2vw,28px)!important}
+.prevenu .prev-titre{font-size:clamp(24px,2.4vw,30px)!important;line-height:1.15}
+.ch-photo .pola{padding-bottom:40px}
+.ch-txt>p.ch-ecart{font-size:27px!important;line-height:1.2}
+.ch-vraie p.ch-main{font-size:clamp(34px,4vw,48px)!important;line-height:1}
+
 .vue{display:block!important}
 .proto{display:none!important}
