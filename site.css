@@ -1144,9 +1144,12 @@ figcaption{font-size:19px!important}
 }
 
 /* Rubriques : la photo à la une reste dans son cadre, quel que soit son format */
-.rub-une-img,.rub-carte-img{overflow:hidden}
-main .rub-une-img img,main .rub-carte-img img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important}
-main .rub-une-img img.contain,main .rub-carte-img img.contain{object-fit:contain!important}
+.rub-une-img{overflow:hidden}
+main .rub-une-img img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important}
+main .rub-une-img img.contain{object-fit:contain!important}
+main .rub-grille .rub-carte .rub-carte-img img{width:100%!important;height:auto!important;aspect-ratio:4/3!important;object-fit:cover!important;position:static!important}
+main .rub-grille .rub-carte .rub-carte-img img.contain{object-fit:contain!important}
+@media (max-width:700px){main .rub-grille .rub-carte .rub-carte-img img{aspect-ratio:1/1!important}}
 
 main .rub-une-img img{object-position:center 85%!important}
 @media (max-width:700px){.rub-une-img{aspect-ratio:5/4!important}.rub-une .rub-tampon{top:10px!important;bottom:auto!important;right:10px!important}}
