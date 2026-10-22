@@ -1085,6 +1085,10 @@ figcaption{font-size:19px!important}
 .c-pt{fill:#fff;stroke:#A8604F;stroke-width:2.5}
 .c-note{font-family:'Caveat',cursive;font-size:21px;fill:#4A3B37}
 .c-fort{fill:#A8604F;font-weight:700}
+.besoin-grille{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:36px;align-items:center;margin:10px 0 18px}
+.besoin-grille .schema-carnet{margin:0}
+.besoin-grille .schema-carnet svg text.c-note{font-size:24px}
+@media (max-width:860px){.besoin-grille{grid-template-columns:1fr}}
 
 .vue{display:block!important}
 .proto{display:none!important}
