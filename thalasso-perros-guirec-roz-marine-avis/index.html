@@ -31,7 +31,7 @@
       <a href="/sport/" data-nav="sport">Sport</a>
       <a href="/photo-technologie/" data-nav="photo-technologie">Photo <span class="amp-c">&amp;</span> technologie</a>
       <a href="/a-propos/" data-nav="a-propos">À propos</a>
-      <a class="btn small" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn small" href="https://www.instagram.com/ameliesoubrie.perso/" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </div>
 </header>
@@ -237,7 +237,7 @@
     var liste=ARTICLES.filter(function(a){return a.rub===r});
     var h='<div class="wrap"><header class="rub-tete2"><span class="scotch" aria-hidden="true"></span><p class="rub-label">la rubrique</p><h1 class="t">'+R.titre+'</h1><p class="rub-intro">'+R.intro+'</p></header></div><div class="wrap rub-corps">';
     if(!liste.length){
-      h+='<div class="rub-vide"><p class="rub-tampon">Bientôt</p><h2 class="t">Je teste, <span class="hl">je reviens vite.</span></h2><p>Les premiers articles de cette rubrique arrivent très bientôt. En attendant, on se retrouve sur Instagram.</p><a class="btn" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener">Me suivre <svg class="arrow" aria-hidden="true"><use href="#fl"/></svg></a></div>';
+      h+='<div class="rub-vide"><p class="rub-tampon">Bientôt</p><h2 class="t">Je teste, <span class="hl">je reviens vite.</span></h2><p>Les premiers articles de cette rubrique arrivent très bientôt. En attendant, on se retrouve sur Instagram.</p><a class="btn" href="https://www.instagram.com/ameliesoubrie.perso/" target="_blank" rel="noopener">Me suivre <svg class="arrow" aria-hidden="true"><use href="#fl"/></svg></a></div>';
     } else {
       var u=liste[0];
       h+='<article class="rub-une"><a class="rub-une-img" href="/'+u.slug+'/\" tabindex="-1" aria-hidden="true"><img src="'+photo(u)+'"'+fit(u)+' alt="" loading="lazy"><span class="rub-tampon">Le dernier<br>testé</span></a><div class="rub-une-txt"><p class="label">À la une · '+u.date+'</p><h2 class="t"><a href="/'+u.slug+'/\">'+u.titre+'</a></h2><p>'+u.resume+'</p>'+lien(u,'btn','Lire l’article')+'</div></article>';
@@ -273,7 +273,7 @@
     var g=document.getElementById('insta-grille'); if(!g) return; /* remplacé par la pellicule */
     function vides(){
       var n=POSTS_INSTA.length, total=(n===4)?4:Math.max(3,Math.ceil(n/3)*3);
-      for(var i=n;i<total;i++){g.insertAdjacentHTML('beforeend','<a class="insta-vide" href="https://www.instagram.com/ameliesoubrie/" target="_blank" rel="noopener"><span class="label">Post '+(i+1)+'</span><span>Ton post Instagram s’affichera ici</span></a>');}
+      for(var i=n;i<total;i++){g.insertAdjacentHTML('beforeend','<a class="insta-vide" href="https://www.instagram.com/ameliesoubrie.perso/" target="_blank" rel="noopener"><span class="label">Post '+(i+1)+'</span><span>Ton post Instagram s’affichera ici</span></a>');}
     }
     if(!POSTS_INSTA.length){vides();return;}
     g.style.setProperty('--cols',POSTS_INSTA.length===4?4:3);
