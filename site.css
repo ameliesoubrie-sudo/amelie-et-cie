@@ -1021,7 +1021,7 @@ figcaption{font-size:19px!important}
 .vie figcaption{position:absolute;left:0;right:0;bottom:12px;background:none!important;text-align:center;padding:0!important}
 .vie .credit{bottom:56px}
 @media (max-width:640px){.vie-grille{grid-template-columns:minmax(0,280px)!important;gap:40px!important}.vie-2{margin-top:0!important}}
-.film img{aspect-ratio:4/5!important}
+.film img{aspect-ratio:3/4!important}
 
 .vue{display:block!important}
 .proto{display:none!important}
