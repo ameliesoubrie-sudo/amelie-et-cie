@@ -1052,7 +1052,20 @@ figcaption{font-size:19px!important}
 .la-carte img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
 .la-carte .cc-rub{display:block;font-family:var(--main);font-size:19px;color:var(--terracotta);margin:12px 0 0}
 .la-carte h3{font-size:19px!important;line-height:1.25;margin:2px 0 0}
-@media (max-width:900px){.la-grille{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.la-grille{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media (max-width:640px){.la-grille{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* signature scrapbooking */
+.signature{display:flex!important;align-items:center;gap:26px;justify-content:flex-start!important;border:0!important;background:none!important;padding:0!important;margin:56px 0 30px!important;max-width:460px}
+.sig-photo{position:relative;flex:none;background:#fff;padding:7px 7px 22px;box-shadow:0 10px 22px rgba(74,59,55,.15);transform:rotate(-5deg)}
+.sig-photo::before{content:"";position:absolute;z-index:2;top:-10px;left:50%;width:56px;height:18px;transform:translateX(-50%) rotate(6deg);background:var(--washi-pois)}
+.sig-photo img{display:block;width:96px!important;height:96px!important;object-fit:cover;border-radius:0!important;border:0!important;box-shadow:none!important;transform:none!important}
+.sig-txt{position:relative;transform:rotate(-2deg)}
+.sig-mot{font-family:var(--main)!important;font-size:24px!important;color:var(--espresso);margin:0;line-height:1}
+.sig-nom{font-family:var(--main)!important;font-size:52px!important;font-weight:700;color:var(--rose);margin:0;line-height:1}
+.sig-nom::after{content:"";display:block;width:120px;height:10px;margin-top:2px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10'><path d='M2 6 Q 30 1 60 5 T 118 3' fill='none' stroke='%23C9826F' stroke-width='2' stroke-linecap='round'/></svg>") no-repeat}
+.sig-txt::after{content:"♥";position:absolute;right:-26px;top:22px;color:var(--rose);font-size:20px;transform:rotate(14deg)}
+.sig-lien{display:inline-block;margin-top:6px;font-family:var(--main);font-size:20px;color:var(--terracotta);text-decoration:none;border-bottom:1px dotted var(--rose)}
 
 .vue{display:block!important}
 .proto{display:none!important}
